@@ -1,28 +1,28 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import ExploreContainer from '../components/ExploreContainer';
 import Menu from '../components/Menu';
-import HomeComponent from '../components/HomeComponent';
 
-const Home: React.FC = () => {
+const ComponentesUX: React.FC = () => {
   return (
     <>
-      <Menu contentId='principal' />
-      <IonPage id='principal'>
+      <Menu contentId='components' />
+      <IonPage id='components'>
         <IonHeader>
           <IonToolbar>  
             <IonButtons slot="end">
                 <IonMenuButton></IonMenuButton>
             </IonButtons> 
             <IonTitle className='w-full flex text-center font-semibold text-3xl'>
-              ITLA React App
+              UX Componentes
             </IonTitle>
           </IonToolbar>
         </IonHeader>
         <IonContent fullscreen> 
-          <HomeComponent />
+          <ExploreContainer />
         </IonContent>
       </IonPage>
     </>
   );
 };
 
-export default Home;
+export default ComponentesUX;

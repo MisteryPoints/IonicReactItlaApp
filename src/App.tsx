@@ -26,12 +26,13 @@ import '@ionic/react/css/display.css';
  * https://ionicframework.com/docs/theming/dark-mode
  */
 
-/* import '@ionic/react/css/palettes/dark.always.css'; */
-/* import '@ionic/react/css/palettes/dark.class.css'; */
+import '@ionic/react/css/palettes/dark.always.css'; 
+import '@ionic/react/css/palettes/dark.class.css'; 
 import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
-import './theme/variables.css';
+import './theme/global.css';
+import { MenuPages } from './routes/routes';
 
 setupIonicReact();
 
@@ -39,9 +40,11 @@ const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
+        {MenuPages.map(pages => (
+          <Route exact path={pages.url}>
+            <pages.component/>
+          </Route>
+        ))} 
         <Route exact path="/">
           <Redirect to="/home" />
         </Route>
