@@ -41,7 +41,7 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonRouterOutlet>
         {MenuPages.map(pages => (
-          <Route exact path={pages.url}>
+          <Route key={pages.url} exact path={pages.url}>
             <pages.component/>
           </Route>
         ))} 

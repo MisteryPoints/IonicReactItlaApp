@@ -1,28 +1,28 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react'; 
-import Menu from '../components/Menu';
-import ButtonList from '../components/Buttons';
+import Menu from '../components/Menu'; 
+import Chart from '../components/BarChart';
 
-const Botones: React.FC = () => {
+const Charts: React.FC = () => {
   return (
     <>
-      <Menu contentId='botones' />
-      <IonPage id='botones'>
+      <Menu contentId='graficas' />
+      <IonPage id='graficas'>
         <IonHeader>
           <IonToolbar>  
             <IonButtons slot="end">
                 <IonMenuButton></IonMenuButton>
             </IonButtons> 
             <IonTitle className='w-full flex text-center font-semibold text-3xl'>
-              Botones
+              Graficas
             </IonTitle>
           </IonToolbar>
         </IonHeader>
-        <IonContent fullscreen> 
-          <ButtonList />
+        <IonContent fullscreen>  
+            <Chart />
         </IonContent>
       </IonPage>
     </>
   );
 };
 
-export default Botones;
+export default Charts;

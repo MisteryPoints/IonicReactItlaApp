@@ -1,6 +1,6 @@
 import React from "react" 
-import { Home, Botones, ComponentesUX } from '../pages/pages'
-import { ellipsisHorizontalCircleSharp, homeSharp, appsSharp } from 'ionicons/icons';
+import { Home, Botones, ComponentesUX, MenuUx, Charts, Perritos } from '../pages/pages'
+import { ellipsisHorizontalCircleSharp, homeSharp, appsSharp, menuSharp, statsChartSharp, pawSharp  } from 'ionicons/icons';
 
 
 interface RoutesTypes {
@@ -28,5 +28,23 @@ export const MenuPages: RoutesTypes[] = [
         url: '/UXComponents',
         component: ComponentesUX,
         icon: appsSharp
+    },
+    {
+        title: 'Menu',
+        url: '/MenuUx',
+        component: MenuUx,
+        icon: menuSharp
+    },
+    {
+        title: 'Graficas',
+        url: '/Charts',
+        component: Charts,
+        icon: statsChartSharp
+    },
+    {
+        title: 'Perritos',
+        url: '/Perritos',
+        component: Perritos,
+        icon: pawSharp
     }
 ]

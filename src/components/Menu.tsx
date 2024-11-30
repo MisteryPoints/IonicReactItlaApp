@@ -23,7 +23,7 @@ const Menu: React.FC<MenuProps> = (props: MenuProps) => {
         <IonContent className="ion-padding">
             <IonMenuToggle>
                 {MenuPages.map(pages => (
-                    <IonItem routerLink={pages.url} routerDirection='root' className='w-full flex'>
+                    <IonItem key={pages.title} routerLink={pages.url} routerDirection='root' className='w-full flex'>
                         <IonIcon icon={pages.icon} className='text-cyan-500 pr-4'></IonIcon>
                         <IonLabel>{pages.title}</IonLabel>
                     </IonItem>

@@ -1,6 +1,8 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import Menu from '../components/Menu';
+import Card from '../components/Card';
+import Contact from '../components/Contacts'; 
 
 const ComponentesUX: React.FC = () => {
   return (
@@ -18,7 +20,8 @@ const ComponentesUX: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <IonContent fullscreen> 
-          <ExploreContainer />
+          <Card/>
+          <Contact/>
         </IonContent>
       </IonPage>
     </>
