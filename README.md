@@ -6,14 +6,7 @@ Here’s an **amazing GitHub README** for your app that highlights its features,
 
 An **Ionic + React** application designed to browse and explore recipes from the [TheMealDB API](https://www.themealdb.com/). The app allows users to search meals by name or ingredients, browse by categories, and view detailed recipe information. Powered by **Framer Motion** for smooth animations and styled with **TailwindCSS** for a modern UI.
 
----
-
-## 📸 Screenshots
-| Home Page                           | Search by Name                     | Categories View                    |
-|-------------------------------------|------------------------------------|------------------------------------|
-| ![Home Screenshot](screenshot1.png) | ![Search Screenshot](screenshot2.png) | ![Category Screenshot](screenshot3.png) |
-
----
+--- 
 
 ## 🚀 Features
 
