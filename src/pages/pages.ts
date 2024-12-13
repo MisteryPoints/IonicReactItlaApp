@@ -4,5 +4,6 @@ import Botones from "./Botones";
 import MenuUx from "./MenuUx";
 import Charts from "./Charts";
 import Perritos from "./Perritos";
+import Restaurant from "./Restaurant";
 
-export { Home, ComponentesUX, Botones, MenuUx, Charts, Perritos };
+export { Home, ComponentesUX, Botones, MenuUx, Charts, Perritos, Restaurant };
